@@ -1,0 +1,35 @@
+# n can be any number
+n = 999
+d = str(n)
+arrD = []
+arith = []
+Temp = []
+ans = 1
+while True:
+     #Check break condistions
+     if len(arrD) == 1:
+         ans = 1
+         break
+     temp = 1
+     #Takes number and seperates digits for operation
+     for i in d:
+         arrD.append(int(i))
+    #Math to multiply digits
+     for i in arrD:
+        temp *= i
+     Temp.clear()
+     # Stores new digits
+     for i in str(temp):
+         Temp.append(int(i))
+      #Temp sets new digits in arrD
+     arrD.clear()
+     d = str(temp)
+     #increse Multiplicity
+      #Check break condistions
+     if len(d) == 1:
+         break
+     if len(arrD) == 1:
+          break
+     else:
+         ans += 1
+print(ans)
