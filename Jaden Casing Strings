@@ -1,0 +1,9 @@
+string = 'hello world, my name is cesar godinez and i believe that i am the greatest python coder in the world.'
+
+wrds = string.split()
+JadenString = []
+for i in range(len(wrds)):
+    x = (wrds[i].capitalize())
+    JadenString.append(x)
+l = " ".join(JadenString)
+print(l)
