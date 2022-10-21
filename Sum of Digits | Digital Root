@@ -1,0 +1,13 @@
+def digital_root(n):
+    dig = []
+    ans = n
+    while True:
+        # If the number has only one digit, then the ans is the digit. 
+        temp = 0
+        if ans < 10:
+            return ans
+        else:
+            # Cycle through digits by converting to string, and adding to remp an setting new ans(temp) to the sum of digits
+            for i in str(ans):
+                temp += int(i)
+            ans = temp
