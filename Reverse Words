@@ -1,0 +1,12 @@
+def spin_words(sentence):
+    words = sentence.split()
+    ans = []
+    for i in words:
+        if len(i) > 4:
+            rev = ''.join(reversed(i))
+            ans.append(rev)
+        else:
+            ans.append(i)
+        
+            
+    return ' '.join(ans)
